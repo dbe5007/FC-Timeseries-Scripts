@@ -1,3 +1,15 @@
+# Organize timeseries for analyses in GIMME
+# Daniel Elbich
+# 4/22/17
+#
+# 
+# Reads in text files containing timeseries data and
+# merges into single CSV file for each subject. Includes
+# error catch if different length of series is not equal
+# for all regions.
+#
+# 
+
 require(svDialogs)
 
 returndir=getwd()
@@ -36,11 +48,8 @@ for (i in 1:length(filelist))
 		
 		temp=nchar(filelist[i])-4
 		
-		#name=paste(substr(filelist[1],1,temp),"_",colnames(data)[j],".1D",sep="")
 		name=paste("output/",substr(filelist[i],1,temp),"_",colnames(data)[j],".1D",sep="")
 		
-		#write.table(centered,file='test2.1D',row.names=FALSE,col.names=FALSE)
-		#write.table(centered,file=name)
 		write.table(centered,file=name,row.names=FALSE,col.names=FALSE)
 		
 	}
