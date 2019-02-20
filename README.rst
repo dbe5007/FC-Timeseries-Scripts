@@ -5,9 +5,9 @@ Effective Connectivity Scripts
 Scripts used to conduct effective connectivity analyses. Comprised of:
 
 regionCreation
-'''matlab
+```matlab
 createVMP.m
-'''
+```
 
 	Creates VMP files for Brainvoyager using GLM. GLM must be created prior to running
 
