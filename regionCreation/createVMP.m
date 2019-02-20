@@ -24,7 +24,7 @@ glm = xff(glmpaths{a,1});
 contrast = glm.FFX_tMap([-2;-1;-1;0]);
 
 % Map Name - Concatenates subject ID and contrast, but is not required
-contrast.Map.Name = strcat(subjID{a,1},'_Faces>Other');
+contrast.Map.Name = strcat(subjID{a,1},'CondtionA>CondtionB');
 
 % Save VMP Files
 if a == 1
@@ -46,9 +46,9 @@ else
 end
 
 % Save subject VMP specifically
-contrast.SaveAs(strcat('~/Desktop/TD_Tuning_VMPs/',subjID{a,1},'_Faces.vmp'));
+contrast.SaveAs(strcat('/path/to/vmps/',subjID{a,1},'_CondtionA.vmp'));
 
-% Clean Up - contrast and GLM must be cleared on iteration due to MATLAB memory limitations
+% Clean Up - contrast and GLM must be cleared on each iteration due to MATLAB memory limitations
 contrast.ClearObject;
 glm.ClearObject;
 

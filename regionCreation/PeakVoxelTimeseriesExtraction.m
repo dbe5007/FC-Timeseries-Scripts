@@ -167,15 +167,17 @@ for z=2:length(Sheets)
     
     %Create & Save Spherical ROIs
     voi = xff('new:voi');
+                                                                
+    sphereSize=6;
     
     %Iterate over coordinates in table
     for cc = 1:size(ctab, 1)
         
         %Add coordinate
-        voi.AddSphericalVOI(ctab(cc,1:3),6);
+        voi.AddSphericalVOI(ctab(cc,1:3),sphereSize);
         
         %Add Name to VOI
-        voi.VOI(cc).Name=strcat(Sheets{1,z},'_',RAW{index+1+cc,1},'_6mm_Sphere.voi');
+        voi.VOI(cc).Name=strcat(Sheets{1,z},'_',RAW{index+1+cc,1},'_',sphereSize'mm_Sphere.voi');
         
     end
     
@@ -191,10 +193,6 @@ for z=2:length(Sheets)
     %Debug
     %[VTCName,VTCPath] = uigetfile('*.vtc','Select Volume Map (VTC)');
     %vtc = xff(strcat(VTCPath,VTCName));
-    
-     if strcmpi('ES_9148',Sheets{1,z})==1
-         pause;
-     end
     
     %Pull timeseries for each region and each voxel
     vtc=xff(vtcpath{z-1,1});
@@ -217,8 +215,6 @@ for z=2:length(Sheets)
             b=1;
         end
     end
-    
-    
     
     %Get Variance data from ROIs
     for variance=1:length(voitc_all)

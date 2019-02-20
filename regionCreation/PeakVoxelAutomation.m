@@ -171,24 +171,23 @@ for z=1:length(vmp.Map)
     
     % Create & Save Spherical ROIs
     sphere_voi = xff('new:voi');
+
+    sphereSize=3;
     
     % Make Spheres
     for cc = 1:size(ctab, 1)
         
         % Add coordinate
-        %sphere_voi.AddSphericalVOI(ctab(cc, 1:3), 6);
-        sphere_voi.AddSphericalVOI(ctab(cc, 1:3), 3);
+        sphere_voi.AddSphericalVOI(ctab(cc, 1:3), sphereSize);
         
         % Add Name to VOi
-        %sphere_voi.VOI(cc).Name=strcat(subjID,'_',region_list{cc,1},'_6mm_Sphere.voi');
-        sphere_voi.VOI(cc).Name=strcat(subjID,'_',region_list{cc,1},'_3mm_Sphere.voi');
+        sphere_voi.VOI(cc).Name=strcat(subjID,'_',region_list{cc,1},'_',sphereSize,'mm_Sphere.voi');
         
     end
     
     % Update VOI Information
     sphere_voi.FileVersion=4;
-    %savename=strcat(subjID,'_6mm_Spheres.voi');
-    savename=strcat(subjID,'_3mm_Spheres.voi');
+    savename=strcat(subjID,'_',sphereSize,mm_Spheres.voi');
     
     % Save Sphere VOI
     sphere_voi.SaveAs(savename);
