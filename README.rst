@@ -5,7 +5,7 @@ Effective Connectivity Scripts
 Scripts used to conduct effective connectivity analyses. Comprised of:
 
 regionCreation
-.. code:: m
+.. code:: matlab
 
   createVMP.m
 
