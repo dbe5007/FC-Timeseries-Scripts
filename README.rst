@@ -14,3 +14,4 @@ regionCreation
 taskSpecificTimeseries
 	```conditionSpecificTimeseries.sh``` Creates condition specific timeseries for functional connectivity analyses.
 	```orgTimerseries.R``` Reads in text files containing time series and merges into a single CSV file for each subject.
+	```timeseriesReplaceNA.m``` Replaces zero values with NA for use with GIMME
