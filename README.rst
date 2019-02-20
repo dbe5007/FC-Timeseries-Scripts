@@ -21,6 +21,4 @@ regionCreation
 	Imports XLS table and creates final set of regions to be used to extract time series data from subject specific VTC files.
 
 GIMMEtimeseries
-	```r
-	orgTimerseries.R
-	```
+	```orgTimerseries.R```
