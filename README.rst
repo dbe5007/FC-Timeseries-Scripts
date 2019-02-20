@@ -5,7 +5,7 @@ Effective Connectivity Scripts
 Scripts used to conduct effective connectivity analyses. Comprised of:
 
 regionCreation
-	`createVMP.m` Creates VMP files for Brainvoyager using GLM. GLM must be created prior to running
+`createVMP.m` Creates VMP files for Brainvoyager using GLM. GLM must be created prior to running
 
 	.. code:: m
 	PeakVoxelAutomation.m
