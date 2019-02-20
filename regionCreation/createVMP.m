@@ -1,11 +1,11 @@
 %% Automated Volume Map (VMP) Creation
 %  Daniel Elbich
-%  Lab of Developmental Neuroscience
+%  Penn State University
 %  1/22/17
 %
 %
 %  Requirements: BrainVoyager compatible GLM
-%  This creates volme maps (VMPs) for reading into BrainVoyager. Create a subject and list of paths to the GLMs
+%  This creates volume maps (VMPs) for reading into BrainVoyager. Create a subject and list of paths to the GLMs
 %  you would like to create volume maps from. Code will not match subjects to paths so be sure both are in the
 %  correct order. Values in the 'contrast' variable reflect placement and weighting of experimental condtions.
 %  Update contrast as appropriate with given dataset.

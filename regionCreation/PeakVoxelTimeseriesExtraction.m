@@ -1,6 +1,6 @@
 %% Automated Import Voxel Peaks and Extract Timeseries
 %  Daniel Elbich
-%  Lab of Developmental Neuroscience
+%  Penn State University
 %  12/25/15
 %
 %

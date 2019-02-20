@@ -1,6 +1,6 @@
 %% Automated Peak Voxel Selection & VOI Creation
 %  Daniel Elbich
-%  Lab of Developmental Neuroscience
+%  Penn State University
 %  12/22/15
 %
 %  This process selects peak activation from BrainVoyager volume maps

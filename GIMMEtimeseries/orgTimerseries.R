@@ -1,5 +1,6 @@
 # Organize timeseries for analyses in GIMME
 # Daniel Elbich
+# Penn Stat University
 # 4/22/17
 #
 # 

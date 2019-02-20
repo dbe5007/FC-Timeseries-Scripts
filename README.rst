@@ -12,4 +12,4 @@ regionCreation
 	```PeakVoxelTimeseriesExtraction.m``` Imports XLS table and creates final set of regions to be used to extract time series data from subject specific VTC files.
 
 GIMMEtimeseries
-	```orgTimerseries.R``` Reads in txt files containing time series and merges into a single CSV file for each subject.
+	```orgTimerseries.R``` Reads in text files containing time series and merges into a single CSV file for each subject.
