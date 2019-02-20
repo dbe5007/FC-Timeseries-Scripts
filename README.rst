@@ -12,6 +12,6 @@ regionCreation
 	```PeakVoxelTimeseriesExtraction.m``` Imports XLS table and creates final set of regions to be used to extract time series data from subject specific VTC files.
 
 taskSpecificTimeseries
-	```conditionSpecificTimeseries.sh``` Creates condition specific timeseries for functional connectivity analyses.
+	```conditionSpecificTimeseries.sh``` Creates condition specific timeseries for functional connectivity analyses. Template folder included to be used with organizing data for script.
 	```orgTimerseries.R``` Reads in text files containing time series and merges into a single CSV file for each subject.
 	```timeseriesReplaceNA.m``` Replaces zero values with NA for use with GIMME
