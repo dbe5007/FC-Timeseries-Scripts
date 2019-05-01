@@ -177,8 +177,29 @@ for a=1:length(subjID)
     tempexplainedvar=insertrows(tempexplainedvar,regions',0);
     
     % Exports all series for subject to a csv file.
-    cell2csv([subjID{a,1} '.csv'],tempoutput);
-    cell2csv([subjID{a,1} '_ExplainedVariance.csv'],tempexplainedvar);
+    % Save principal component
+    file = fopen([subjID{a,1} '.csv'], 'w');
+                                
+    for a=1:size(tempoutput,1)
+        for b=1:size(tempoutput,2)
+            var = eval(['tempoutput{a,b}']);
+            fprintf(file, '%s', var);
+        end
+        fprintf(file, '\n');
+    end
+    fclose(file);
+              
+    % Save explained variance
+    file = fopen([subjID{a,1} '_ExplainedVariance.csv'], 'w');
+                                
+    for a=1:size(tempexplainedvar,1)
+        for b=1:size(tempexplainedvar,2)
+            var = eval(['tempexplainedvar{a,b}']);
+            fprintf(file, '%s', var);
+        end
+        fprintf(file, '\n');
+    end
+    close(file);
     
     clear tempoutput tempexplainedvar;
 
