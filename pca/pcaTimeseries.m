@@ -1,4 +1,4 @@
-%% PCA Analysis for Time Series Data Reduction
+%% PCA Analysis for Timeseries Data Reduction
 %  Daniel Elbich
 %  5/8/15
 
@@ -156,7 +156,7 @@ for a=1:length(subjID)
         end
                 
         %Calls PCA function
-        [timeapprox, EXPLAINED]=pca_math(clean_pca);
+        [timeapprox, EXPLAINED]=pcaCalc(clean_pca);
         
         % Passes approximated timeseries for region to concatenation
         % variable for later output
